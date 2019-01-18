@@ -839,6 +839,11 @@ or with a Dask client
 
 
 def get_scheduler(get=None, scheduler=None, collections=None, cls=None):
+    result = _get_scheduler(get, scheduler, collections, cls)
+    print(result)
+
+
+def _get_scheduler(get=None, scheduler=None, collections=None, cls=None):
     """ Get scheduler function
 
     There are various ways to specify the scheduler to use:
